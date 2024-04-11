@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ManageHairFinal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="back">back</string>
+    <string name="selected_date_placeholder">Selected Date Placeholder</string>
+    <string name="add_appointment">Add Appointment</string>
+</resources>

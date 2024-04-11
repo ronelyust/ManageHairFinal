@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_user_appointment.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#4D4D4D"
+    android:padding="16dp">
+
+    <!-- TextView to display appointment date -->
+    <TextView
+        android:id="@+id/text_appointment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#F3EAEA"
+        android:text="Appointment Date: " />
+
+    <!-- TextView to display appointment time -->
+    <TextView
+        android:id="@+id/text_appointment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#F3EAEA"
+        android:text="Appointment Time: " />
+
+    <TextView
+        android:id="@+id/text_appointment_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#F3EAEA"
+        android:visibility="gone"
+        android:text="Name: " />
+
+    <TextView
+        android:id="@+id/text_appointment_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#F3EAEA"
+        android:visibility="gone"
+        android:text="Phone Number: " />
+
+    <!-- Button to remove/cancel the appointment -->
+    <Button
+        android:id="@+id/button_remove_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#9B72A7"
+        android:text="Remove Appointment" />
+
+</LinearLayout>

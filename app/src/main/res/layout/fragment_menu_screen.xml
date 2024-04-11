@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4D4D4D"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".fragments.MenuScreen">
+
+    <ImageView
+        android:id="@+id/logoMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/newappButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:backgroundTint="#9B72A7"
+        android:text="New Appointment" />
+
+    <Button
+        android:id="@+id/userappButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:backgroundTint="#9B72A7"
+        android:text="My Appointments" />
+
+    <Button
+        android:id="@+id/userinfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:backgroundTint="#9B72A7"
+        android:text="My Info" />
+
+    <Button
+        android:id="@+id/menulogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:backgroundTint="#9B72A7"
+        android:text="Log Out" />
+
+    <Button
+        android:id="@+id/workhoursButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Work Hours"
+        android:backgroundTint="#9B72A7"
+        android:visibility="gone" />
+
+</LinearLayout>

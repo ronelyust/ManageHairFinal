@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "578564048246",
+    "project_id": "managehair-5bbab",
+    "storage_bucket": "managehair-5bbab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578564048246:android:bca8f8147a5c4289ae2657",
+        "android_client_info": {
+          "package_name": "com.example.managehairfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRzEHgEjtFHpEJqY15C4GSJxZBiUXagpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

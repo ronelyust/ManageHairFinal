@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/loginScreen">
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.managehairfinal.fragments.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_menuScreen"
+            app:destination="@id/menuScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="com.example.managehairfinal.fragments.RegisterScreen"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreen_to_menuScreen"
+            app:destination="@id/menuScreen" />
+        <action
+            android:id="@+id/action_registerScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuScreen"
+        android:name="com.example.managehairfinal.fragments.MenuScreen"
+        android:label="fragment_menu_screen"
+        tools:layout="@layout/fragment_menu_screen" >
+        <action
+            android:id="@+id/action_menuScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_menuScreen_to_userAppointments"
+            app:destination="@id/userAppointments" />
+        <action
+            android:id="@+id/action_menuScreen_to_newAppointment"
+            app:destination="@id/newAppointment" />
+        <action
+            android:id="@+id/action_menuScreen_to_userInfo"
+            app:destination="@id/userInfo" />
+        <action
+            android:id="@+id/action_menuScreen_to_workingHours"
+            app:destination="@id/workingHours" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAppointments"
+        android:name="com.example.managehairfinal.fragments.UserAppointments"
+        android:label="fragment_user_appointments"
+        tools:layout="@layout/fragment_user_appointments" >
+        <action
+            android:id="@+id/action_userAppointments_to_newAppointment"
+            app:destination="@id/newAppointment" />
+        <action
+            android:id="@+id/action_userAppointments_to_menuScreen"
+            app:destination="@id/menuScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAppointment"
+        android:name="com.example.managehairfinal.fragments.NewAppointment"
+        android:label="fragment_new_appointment"
+        tools:layout="@layout/fragment_new_appointment" >
+        <action
+            android:id="@+id/action_newAppointment_to_menuScreen"
+            app:destination="@id/menuScreen" />
+        <action
+            android:id="@+id/action_newAppointment_to_scheduleAppointment"
+            app:destination="@id/scheduleAppointment">
+                <argument
+                    android:name="selctedDate"
+                    app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/userInfo"
+        android:name="com.example.managehairfinal.fragments.UserInfo"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <action
+            android:id="@+id/action_userInfo_to_menuScreen"
+            app:destination="@id/menuScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleAppointment"
+        android:name="com.example.managehairfinal.fragments.ScheduleAppointment"
+        android:label="ScheduleAppointment" >
+        <action
+            android:id="@+id/action_scheduleAppointment_to_newAppointment"
+            app:destination="@id/newAppointment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workingHours"
+        android:name="com.example.managehairfinal.fragments.WorkingHours"
+        android:label="fragment_working_hours"
+        tools:layout="@layout/fragment_working_hours" >
+        <action
+            android:id="@+id/action_workingHours_to_menuScreen"
+            app:destination="@id/menuScreen" />
+    </fragment>
+</navigation>

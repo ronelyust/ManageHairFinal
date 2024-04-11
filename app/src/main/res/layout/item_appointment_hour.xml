@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4D4D4D"
+    android:padding="12dp">
+
+    <!-- Hour, name, and phone layout (aligned to left) -->
+    <LinearLayout
+        android:id="@+id/layout_appointment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/button_add_appointment"
+        android:layout_toStartOf="@id/button_add_appointment">
+
+        <!-- TextView for appointment hour -->
+        <TextView
+            android:id="@+id/text_appointment_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F3EAEA"
+            android:textSize="16sp" />
+
+        <!-- TextView for appointment name -->
+        <TextView
+            android:id="@+id/text_appointment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#F3EAEA"
+            android:textSize="16sp" />
+
+        <!-- TextView for appointment phone number -->
+        <TextView
+            android:id="@+id/text_appointment_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#F3EAEA"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Button for add appointment (aligned to right) -->
+    <Button
+        android:id="@+id/button_add_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Appointment"
+        android:backgroundTint="#9B72A7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <!-- Button for remove appointment (aligned to right, below add appointment button) -->
+    <Button
+        android:id="@+id/button_remove_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Appointment"
+        android:visibility="gone"
+        android:backgroundTint="#9B72A7"
+        android:layout_below="@id/button_add_appointment"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+

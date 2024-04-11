@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D">
+
+    <!-- RecyclerView to display available appointmentData hours -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_appointment_hours"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D4D4D"
+        android:padding="16dp"
+        android:layout_above="@+id/button_clear_day" />
+
+    <Button
+        android:id="@+id/button_clear_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_back_to_calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:enabled="false"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#9B72A7"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button_back_to_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#9B72A7"
+        android:text="Back to Calendar" />
+
+</RelativeLayout>
